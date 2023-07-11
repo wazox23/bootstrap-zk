@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>html+css+bootstrap zkouška</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Agdasima&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caprasimo&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fasthand&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .background-image {
+        background-image: url("https://www.gvuo.cz/data/images/cache/94c289bbaf132119f6729fe0abf1793a64919fb06e0a2-w888.jpg");
+        height: 70vh;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      @media (min-width: 768px) {
+        .images {
+          width: 300px;
+          height: 300px;
+        }
+      }
+
+      .font1 {
+        font-family: "Agdasima", sans-serif;
+      }
+
+      .font2 {
+        font-family: "Caprasimo", cursive;
+      }
+      .font3 {
+        font-family: "Fasthand", cursive;
+      }
+
+      @media (min-width: 768px) {
+        .images {
+          width: 300px;
+          height: 300px;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .resizable-title {
+          font-size: 20px;
+        }
+        .resizable-text {
+          font-size: 14px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="container-bg">
+      <header>
+        <nav
+          class="navbar navbar-expand-lg bg-body-secondary fixed-top navbar-shadow"
+        >
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <p class="fs-2 fw-bold">Exhibition.</p>
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse justify-content-end"
+              id="navbarNav"
+            >
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a
+                    class="nav-link text-uppercase fw-bold"
+                    aria-current="page"
+                    href="#reservation"
+                    >Reservation</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-uppercase fw-bold" href="#aboutUs"
+                    >About Us</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-uppercase fw-bold" href="#carousel"
+                    >Carousel</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-uppercase fw-bold" href="#reviews"
+                    >Reviews</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-uppercase fw-bold" href="#form"
+                    >Form</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-uppercase fw-bold" href="#location"
+                    >Location</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-uppercase fw-bold" href="#contact"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <section class="row" id="reservation">
+          <div class="col-lg background-image img-fluid text-center">
+            <h1 class="display-4">Exhibition Name</h1>
+            <h2 class="lead">Institution Name</h2>
+            <div class="mt-4">
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                Reserve tickets
+              </button>
+              <button target="_blank" class="btn btn-secondary">
+                Go to page
+              </button>
+            </div>
+          </div>
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">
+                    Reservation Form
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <form novalidate>
+                    <div class="input-group">
+                      <input
+                        type="text"
+                        id="text"
+                        class="form-control"
+                        aria-required="true"
+                        placeholder="First Name"
+                        required
+                      />
+                      <input
+                        type="text"
+                        id="text2"
+                        class="form-control"
+                        placeholder="Last Name"
+                        aria-required="true"
+                        required
+                      />
+                    </div>
+                    <input
+                      type="date"
+                      id="text2"
+                      class="form-control"
+                      placeholder="Date"
+                      aria-required="true"
+                      required
+                    />
+                    <input
+                      type="number"
+                      id="text2"
+                      class="form-control"
+                      placeholder="Number of tickets"
+                      aria-required="true"
+                      required
+                    />
+                    <div class="form-floating">
+                      <input
+                        type="email"
+                        id="email"
+                        class="form-control"
+                        placeholder="email"
+                        aria-required="true"
+                        required
+                      />
+                      <label for="email">Email</label>
+                      <div class="form-floating">
+                        <input
+                          type="phone"
+                          id="phone"
+                          class="form-control"
+                          placeholder="phone"
+                          aria-required="true"
+                          required
+                        />
+                        <label for="email">Phone</label>
+                      </div>
+                      <button type="submit" class="btn btn-primary my-2">
+                        Reservation
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                        data-toggle="tooltip"
+                        data-placement="right"
+                        title="Click to close form"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="row" id="aboutUs">
+          <h2 class="g-5">About Us</h2>
+          <div class="col-md-4 g-5">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH-9F3yfBNa0bWwReFh1o14ixuDO5wmgMfjCW3iJognxCcUa-6_nLQNrVgmved53apgFE&usqp=CAU"
+              alt="image-1"
+              class="img-fluid images d-block mx-auto d-md-block d-none"
+            />
+            <h3 class="resizable-title">Lorem, ipsum.</h3>
+            <p class="font1 resizable-text">Lorem ipsum dolor sit amet.</p>
+          </div>
+          <div class="col-md-4 g-5">
+            <img
+              src="https://www.topzine.cz/wp-content/uploads/2012/01/mona-lisa-leonardo-da-vinci.jpg"
+              alt="image-2"
+              class="img-fluid images d-block mx-auto d-md-block d-none"
+            />
+            <h3 class="resizable-title">Lorem, ipsum dolor.</h3>
+            <p class="font2 resizable-text">Lorem ipsum dolor sit amet.</p>
+          </div>
+          <div class="col-md-4 g-5">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4n64E1TYrUUkf-9sUWxp1GJWM4AHrG6h5yt6zt4nVdTwTBzHY4A09WXirEx76M8Rah6s&usqp=CAU"
+              alt="image-3"
+              class="img-fluid images d-block mx-auto d-md-block d-none"
+            />
+            <h3 class="resizable-title">Lorem.</h3>
+            <p class="font3 resizable-text">Lorem ipsum dolor sit amet.</p>
+          </div>
+        </section>
+        <section class="row" id="carousel">
+          <h2 class="g-5">Carousel</h2>
+          <div class="col-lg-12">
+            <div
+              id="carouselExampleIndicators"
+              class="carousel slide"
+              data-ride="carousel"
+            >
+              <div class="carousel-inner g-lg-5">
+                <div class="carousel-item active">
+                  <img
+                    class="d-block mx-auto images img-fluid"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH-9F3yfBNa0bWwReFh1o14ixuDO5wmgMfjCW3iJognxCcUa-6_nLQNrVgmved53apgFE&usqp=CAU"
+                    alt="First slide"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    class="d-block mx-auto images"
+                    src="https://www.topzine.cz/wp-content/uploads/2012/01/mona-lisa-leonardo-da-vinci.jpg"
+                    alt="Second slide"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    class="d-block mx-auto images"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4n64E1TYrUUkf-9sUWxp1GJWM4AHrG6h5yt6zt4nVdTwTBzHY4A09WXirEx76M8Rah6s&usqp=CAU"
+                    alt="Third slide"
+                  />
+                </div>
+              </div>
+              <a
+                class="carousel-control-prev"
+                href="#carouselExampleIndicators"
+                role="button"
+                data-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon bg-primary"
+                  aria-hidden="true"
+                ></span>
+              </a>
+              <a
+                class="carousel-control-next"
+                href="#carouselExampleIndicators"
+                role="button"
+                data-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon bg-primary"
+                  aria-hidden="true"
+                ></span>
+              </a>
+            </div>
+          </div>
+        </section>
+        <section class="row" id="reviews">
+          <h2 class="g-5">Reviews</h2>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card">
+              <h3 class="text-center">Cassie Osmond</h3>
+              <div class="card-body">
+                <h5 class="card-title">Exhibition in Zlin</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card">
+              <h3 class="text-center">Vergil Barney</h3>
+              <div class="card-body">
+                <h5 class="card-title">Exhibition in Oslo</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card">
+              <h3 class="text-center">Prue Harmonie</h3>
+              <div class="card-body">
+                <h5 class="card-title">Exhibition in Prague</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card">
+              <h3 class="text-center">Jodie Skye</h3>
+              <div class="card-body">
+                <h5 class="card-title">Exhibition in New York</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="row" id="form">
+          <h2 class="g-5">Form</h2>
+          <form>
+            <div class="input-group">
+              <input
+                type="text"
+                id="text"
+                class="form-control"
+                aria-required="true"
+                placeholder="Jmeno"
+                required
+              />
+              <input
+                type="text"
+                id="text2"
+                class="form-control"
+                placeholder="Prijmeni"
+                aria-required="true"
+                required
+              />
+            </div>
+            <div class="form-floating">
+              <input
+                type="email"
+                id="email"
+                class="form-control"
+                placeholder="email"
+                aria-required="true"
+                required
+              />
+              <label for="email">Email</label>
+            </div>
+            <div class="form-floating">
+              <input
+                type="description"
+                id="description"
+                class="form-control description-form"
+                style="height: 200px"
+                aria-required="true"
+                required
+              />
+              <label for="Description" class="fs-5">Description</label>
+              <button type="submit" class="btn btn-primary my-2">
+                Odeslat zpravu
+              </button>
+            </div>
+          </form>
+        </section>
+        <section class="row" id="location">
+          <h3 class="g-5">Google map</h3>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83372.42823732318!2d17.594106344715186!3d49.2311252968766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47130cad4c888e0d%3A0x418d4c16a8ac214f!2zWmzDrW4!5e0!3m2!1scs!2scz!4v1689067837252!5m2!1scs!2scz"
+            width="500"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </section>
+      </main>
+      <footer class="row bg-secondary" id="contact">
+        <div class="col-lg-6 d-flex justify-content-center gy-5 text-center">
+          <a
+            href="https://github.com/wazox23"
+            class="text-decoration-none text-dark"
+          >
+            <i class="fa-brands fa-github fa-2x m-2"></i
+          ></a>
+          <a
+            href="https://cs-cz.facebook.com/"
+            class="text-decoration-none text-dark"
+          >
+            <i class="fa-brands fa-facebook fa-2x m-2"></i>
+          </a>
+        </div>
+        <div class="col-lg-6 d-flex justify-content-center gy-5">
+          <a
+            href="https://github.com/wazox23"
+            class="text-decoration-none text-dark"
+          >
+            <i class="fa-brands fa-tiktok fa-2x mx-2 my-2"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/"
+            class="text-decoration-none text-dark"
+          >
+            <i class="fa-brands fa-instagram fa-2x mx-2 my-2"></i
+          ></a>
+        </div>
+        <p class="text-center">Email: martinbalajka23@gmail.com</p>
+        <p class="text-center">Contact: +420608204736</p>
+        <p class="text-center">Adress: tř. Tomáše Bati 3118</p>
+      </footer>
+    </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const form = document.querySelector("form");
+      form.addEventListener("submit", (e) => {
+        if (!form.checkValidity()) {
+          e.preventDefault();
+        }
+        form.classList.add("was-validated");
+      });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+        $(".btn-secondary").click(function () {
+          $(this).html(
+            '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Loading...'
+          );
+        });
+      });
+    </script>
+  </body>
+</html>
