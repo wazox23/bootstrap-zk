@@ -47,7 +47,22 @@
         flex-direction: column;
         justify-content: center;
       }
+         .img-fluid {
+        max-width: 100%;
+        height: auto;
+      }
 
+      @media (max-width: 1024px) {
+        .img-fluid {
+          width: 80%;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .img-fluid {
+          width: 60%;
+        }
+      }
       @media (min-width: 768px) {
         .images {
           width: 300px;
