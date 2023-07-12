@@ -513,6 +513,21 @@
         form.classList.add("was-validated");
       });
     </script>
+       <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var navLinks = document.querySelectorAll(".nav-link");
+        var navbarCollapse = document.getElementById("navbarNav");
+
+        navLinks.forEach((navLink) => {
+          navLink.addEventListener("click", function () {
+            var bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+              toggle: false,
+            });
+            bsCollapse.hide();
+          });
+        });
+      });
+    </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
